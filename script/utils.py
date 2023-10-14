@@ -75,7 +75,7 @@ def create_df(data):
     df = pd.DataFrame(data,columns=col)
     df = df.sort_values(by = 'Time',ascending = True)
 
-    df_rain = df[(df['Rain']==1) & (df['Time']>=6) & (df['Time']=< 22)]
+    df_rain = df[(df['Rain']==1) & (df['Time']>=6) & (df['Time']<= 22)]
     df_rain = df_rain[['Time','Condition']]
     df_rain.set_index('Time', inplace = True)
 
