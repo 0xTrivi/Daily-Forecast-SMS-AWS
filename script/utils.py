@@ -105,7 +105,7 @@ def send_message(TWILIO_ACCOUNT_SID,TWILIO_AUTH_TOKEN,input_date,df,query):
                         body='Hi! \n\n\nToday\'s '+ input_date +
                         ' rain forecast in ' + query +' is:\n\n\n' + str(df),
                         from_=PHONE_NUMBER,
-                        to='+YOUR TWILIO NUMBER'
+                        to='+YOUR NUMBER'
                     )
 
     return message.sid
